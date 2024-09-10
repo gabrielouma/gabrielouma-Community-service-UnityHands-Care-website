@@ -6,34 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://kit.fontawesome.com/2b05772f44.js"></script>
-    <title>UnityHandscCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <title>UnityHandscCare</title>
 </head>
 <body>
-    <!-- Navbar Started-->
-    <header id="header">
-        <div class="nav">
-            <div class="nav-brand">
-                <img src="./assets/images/logo.jpg" alt="logo" srcset="">
-                <h2></h2>
-            </div>
-            <div class="nav-item">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./about.html">About us</a></li>
-                    <li><a href="./mission.html">Mission</a></li>
-                    <li><a href="./service.html">Service</a></li>
-                    <li><a href="#gallary">Gallary</a></li>
-                    <li><a href="#contact" class="contact-btn">Contact</a></li>
-                </ul>
-                <div class="toggle" onclick="toggle()"></div>
-
-            </div>
+    <header>
+        <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>UnityHandsCare</span></a>
+        
+        <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill">Sign In</i></a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
-
-
-    <!------- Home Started -------->
-    <section id="home">
+     <section id="home">
         <div class="home_page">
             <div class="home_content" data-aos="fade-up">
                 <h1>Serving To Humanity</h1>
@@ -43,10 +39,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
 
-    <!------- About Started -------->
+    <!-- <----- About Started --------> 
     <section id="about ">
         <div class="about-bg ">
             <div class="rows" data-aos="fade-up">
@@ -57,7 +53,7 @@
                         economic, financial, educational, emotional cultural and environmental issues.</p>
                 </div>
                 <div class="about-image">
-                    <img src="./assets/images/about.png" alt="" srcset="">
+                    <img src="./assets/images/" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -160,8 +156,9 @@
         </div>
     </section>
 
-    <!-- <footer>
-        <section id="footer">
+    <!--  <footer> -->
+        <footer id="footer">
+            
             <div class="row">
                 <div class="col">
                     <img src="/assets/images/UnityHandsCare logo.png" class="logo">
@@ -205,7 +202,8 @@
 
             <p class="copyright">Copyright &copy; 2024 - UnityHandsCare -All rights reserved</p>
 
-        </section>
-    </footer> -->
+    </footer> 
+    <!-- js link --> 
+    <script src="/assets/js/script.js"></script> 
 </body>
 </html>
