@@ -12,9 +12,9 @@
     user-select: none;
 }
 :root {
-    --bg-color: #fffcfc;
-    --text-color: #04074f;
-    --main-color: #29fd53;
+    --bg-color: #fff;
+    --text-color: #212529;
+    --main-color: #e45400;
 }
 body {
     min-height: 100vh;
@@ -24,47 +24,64 @@ body {
     flex-direction: column;
     justify-content: space-between;
    
-
 }
-
+.header-container {
+    background-color: #fff; /* Blue background */
+    width: 100%;
+    position: fixed; 
+    /* top: 0;
+    right: 0; */
+    z-index: 1000;
+    padding: 40px 12%;  
+    transition: all 0.50s ease; /* Smooth transition on scroll */
+    margin-bottom: 60px;
+}
 header {
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
-    transition: all .50s ease;
+    /* background: transparent; */
+    /* padding: 28px 12%; */
+    
 }
 .logo {
     
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 1002;
 }
-.logo i {
+.logo-img {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; 
+}
+/* .logo i {
     color: var(--main-color);
     font-size: 28px;
     margin-right: 3px;
-}
+} */
 .logo span {
     color: var(--text-color);
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 .navbar {
     display: flex;
+
 }
 .navbar a {
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
     padding: 5px 0;
-    margin: 0px 30px;
+    margin: 0px 10px;
     transition: all .50s ease;
 }
 .navbar a:hover {
@@ -117,6 +134,7 @@ header {
 @media (max-width: 1090px) {
     #menu-icon {
         display: block;
+        z-index: 1001;
     }
     .navbar {
         position: absolute;
@@ -124,12 +142,13 @@ header {
         right: -100%;
         width: 270px;
         height: auto;
-        background: var(--main-color);
+        background: var(--bg-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 10px;
         transition: all .50s ease;
+        z-index: 1000;
     }
     .navbar a {
         display: block;
@@ -139,11 +158,11 @@ header {
         
     }
     .navbar a:hover {
-        color: var(--text-color);
+        color: var(--main-color);
         transform: translateY(5px);
     }
     .navbar a.active {
-        color: var(--text-color);
+        color: var(--main-color);
     }
     .navbar.open {
         right: 2%;
