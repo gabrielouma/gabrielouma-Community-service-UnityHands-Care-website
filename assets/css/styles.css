@@ -26,7 +26,7 @@ body {
    
 }
 .header-container {
-    background-color: #fff; /* Blue background */
+    background-color: #ffffff; /* Blue background */
     width: 100%;
     position: fixed; 
     /* top: 0;
@@ -54,7 +54,7 @@ header {
     display: flex;
     align-items: center;
     cursor: pointer;
-    z-index: 1002;
+    
 }
 .logo-img {
     width: 40px; /* Adjust the size as needed */
@@ -134,7 +134,12 @@ header {
 @media (max-width: 1090px) {
     #menu-icon {
         display: block;
-        z-index: 1001;
+        position: absolute;
+        top: 10%;
+        right: 2%;
+    }
+
+            
     }
     .navbar {
         position: absolute;
@@ -167,6 +172,11 @@ header {
     .navbar.open {
         right: 2%;
     }
+    .main a{
+        margin-top: 20px;
+        display: none;
+    }
+
 }
 
 #home {
