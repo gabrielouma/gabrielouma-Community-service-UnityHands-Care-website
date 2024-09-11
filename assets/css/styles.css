@@ -136,10 +136,7 @@ header {
         display: block;
         position: absolute;
         top: 10%;
-        right: 2%;
-    }
-
-            
+        right: 4%;
     }
     .navbar {
         position: absolute;
@@ -176,8 +173,8 @@ header {
         margin-top: 20px;
         display: none;
     }
-
 }
+
 
 #home {
     height: 90vh;
